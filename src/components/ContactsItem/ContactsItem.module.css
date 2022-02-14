@@ -1,0 +1,9 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.item:first-child {
+    margin-top: 0;
+}
