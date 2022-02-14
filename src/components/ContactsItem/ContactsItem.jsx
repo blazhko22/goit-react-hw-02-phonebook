@@ -11,6 +11,7 @@ function ContactsItem({
         {name}: {number}
       </span>
       <button
+        className={s.button}
         type="button"
         data-id={id}
         onClick={e => {
