@@ -19,7 +19,7 @@ class Render extends Component {
     this.setState({ name: event.target.value });
   };
   addContact = newContact => {
-    this.state.contacts.find(contact => contact.name === newContact.name)
+    this.state.contacts.find(contact => contact.name.toLocaleLowerCase() === newContact.name.toLocaleLowerCase())
       ? alert(`${newContact.name} is already in contacts`)
       : this.setState(prevState => {
           return {
